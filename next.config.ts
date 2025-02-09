@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export", // Ensures Next.js generates static files for Capacitor
 };
 
 export default nextConfig;
