@@ -4,9 +4,9 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Next.js PWA",
-    short_name: "NextPWA",
-    description: "A Progressive Web App built with Next.js",
+    name: "Lang App 2",
+    short_name: "LangApp2",
+    description: "Learn a new language with Lang App 2",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

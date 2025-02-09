@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ServiceWorker from "./ServiceWorker"; // Adjust the import path if needed
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,11 +27,16 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#000000" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        {/* <ServiceWorker /> */}
       </body>
     </html>
   );
